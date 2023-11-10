@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace FileLocalTypesExample
 {
-    internal class ImplementationOverride
+    file class ImplementationOverride : IOverride
     {
+        public void Test()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    
+    public interface IOverride
+    {
+        void Test();
     }
 }

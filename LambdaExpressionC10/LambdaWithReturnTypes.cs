@@ -4,9 +4,9 @@
     {
         public void Example()
         {
-            var executor = (OperationType operationType) => operationType == OperationType.Sum ? new SumExecutor() : new SubExecutor();
-
-            executor.Execute(1,2);
+            var executor = IOperationExecutor (OperationType operationType) => operationType == OperationType.Sum ? new SumExecutor() : new SubExecutor();
+            var operationExecutor = executor(OperationType.Sum);
+            var result = operationExecutor.Execute(1, 2);
         }
     }
 

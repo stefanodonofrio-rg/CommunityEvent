@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FileLocalTypesExample
+﻿namespace FileLocalTypesExample
 {
-    internal class ShadowImplementation
+    class ShadowImplementation
     {
+        public ShadowImplementation()
+        {
+            var testShadow = new TestShadow();
+        }
+    }
+
+    file class TestShadow
+    {
+        public TestShadow()
+        {
+            Console.WriteLine("Test from file class");
+        }
     }
 }

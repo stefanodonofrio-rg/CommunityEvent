@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace FileLocalTypesExample
 {
-    internal class Attribute
+    file class MyFileLocalAttribute : Attribute { }
+
+    [MyFileLocal]
+    internal class ClassWithAttribute
     {
     }
 }
