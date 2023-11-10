@@ -17,7 +17,7 @@ Square(5); // 25
 <details>
 	<summary>Infer natural delegate type</summary>
 
-- Prior to c# 10 every time we define a delegate we need to specify explictly the delegate type [demo](./LambdaExpressionC9/NoNaturalType.cs)
+- Prior to c# 10 every time we define a delegate we need to specify explicitly the delegate type [demo](./LambdaExpressionC9/NoNaturalType.cs)
 - How much easier would be if we can just use var? [demo](./LambdaExpressionC10/WithNaturalTypeInferred.cs)
 </details>
 <details>
